@@ -1,0 +1,27 @@
+package com.research.tools;
+
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		setContentView(R.layout.activity_main);
+	}
+	public void onGPSButtonClick(View v){
+		Log.i("Stuff","Stuff");
+		return;
+	}
+	public void onWifiButtonClick(View v){
+		return;
+	}
+	public void onCellButtonClick(View v){
+		return;
+	}
+}
