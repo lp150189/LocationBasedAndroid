@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\Zach\SkyDrive\Cal Poly Pomona\Research\.metadata\.plugins\org.eclipse.jdt.core
+3092243451.index
+3048431024.index
+413061024.index

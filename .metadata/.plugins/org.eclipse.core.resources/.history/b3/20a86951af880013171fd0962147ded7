@@ -1,0 +1,38 @@
+package com.research.tools;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+	public void onGPSButtonClick(View v){
+		 Runnable run = new Runnable() {
+
+		        @Override
+		        public void run() {
+		           long millis = System.currentTimeMillis() - starttime;
+		           int seconds = (int) (millis / 1000);
+		           int minutes = seconds / 60;
+		           seconds     = seconds % 60;
+
+		           textView12.setText(String.format("%d:%02d", minutes, seconds));
+
+		           h2.postDelayed(this, 500);
+		        }
+		    };
+		return;
+	}
+	public void onWifiButtonClick(View v){
+		return;
+	}
+	public void onCellButtonClick(View v){
+		return;
+	}
+}
